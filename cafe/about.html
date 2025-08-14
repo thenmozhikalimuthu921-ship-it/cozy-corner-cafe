@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+</head>
+<style>
+
+ H1{
+    padding: 15px;
+    
+ }
+ .bold{
+    
+   font-weight: bold;
+    color: brown;
+    font-size: 30px;
+ }
+ .image{
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+ }
+.bold {
+    font-family: Papyrus, fantasy;
+}
+.bold.papyrus {
+    /* sets the text to Papyrus */
+    font-family: Papyrus;
+}
+
+.bold.harrington {
+    /* sets the text to Harrington */
+    font-family: Harrington;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(200px,1fr));
+    gap: 10px;
+    padding: 10px;
+} 
+.gallery img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+}
+.icons{
+letter-spacing: 10px;
+background-color: brown;
+}
+.icons:hover{
+    cursor: pointer;
+    color: white;
+}
+.gallery-container{
+    position: relative;
+    width: 100%;
+   overflow: hidden;
+}
+.gallery{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+
+}
+button{
+    position: absolute;
+    top: 50%;
+    transform: translate Y(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+
+}
+.prev{
+    left:10px;
+
+}
+.next{
+    right: 10px;
+}
+.gallery-container img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+</style>
+<body>
+    <CENTER>
+        <b class="bold">Cozy Corner..</b>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5"/>
+  <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8"/>
+</svg>
+    <h1> ABOUT US</h1>
+    <h2>--Good for food apps</h2>
+    <h2>--Choose name good for website</h2>
+    
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quam culpa maiores ratione dolorem iste voluptas, similique aliquam omnis est. Temporibus voluptate asperiores rem dolorum fugiat magni voluptas voluptatum quo blanditiis nisi sit eum beatae similique reprehenderit architecto quasi, illo velit, excepturi sed provident porro! Sunt, iste suscipit esse, delectus libero id aspernatur quae pariatur fuga ut cumque doloremque maxime dolorum voluptatibus, consequatur illum molestiae temporibus provident. Nemo tempora eius minus ipsam ipsa illo praesentium facilis adipisci blanditiis, sequi incidunt eos omnis magni? Quis commodi, inventore ratione magni fugiat hic, ullam tempora velit culpa vitae ipsam incidunt praesentium, ipsa natus.</h2>
+     
+     <img class="image" src="33.jpg">
+    </CENTER>
+    <h1> Available Foods</h1>
+     <div class="gallery-container">
+        <button class="prev" onclick="scrollGallery(-250)">&#10094; </button>
+     <div class="gallery" id="imagegallery">
+     <img class="IMAGE6" src="31.jpg">
+     <img class="IMAGE7" src="18.jpg">
+     <img class="IMAGE8" src="11.jpg">
+     <img  class="IMAGE2"    src="28.jpg">
+     <img  class="IMAGES3" src="12.jpg">
+     <img class="IMAGE3" src="2.jpg">
+     <img class="IMAGE3" src="30.jpg">
+     <img class="IMAGE3" src="17.jpg">
+
+     </div>
+     <button class="next" onclick="scrollGallery(250)">&#10095;</button>
+     <script>
+        function scrollGallery(amount) {
+            Document.getElementbyId("imagegallery").scrolby
+            ({
+                left:amount,
+                behavior:"smooth"
+            });
+
+            }
+     </script>
+     
+    
+ 
+    
+<!---footer--->
+    <hr>
+</body>
+<footer>
+        <center>
+            <h1>contact us</h1>
+            <h2>call-9807574610</h2>
+             <h2> EMAIL-cozy-corner@gmail.com</h2>
+               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a quae, accusantium deleniti consequuntur blanditiis dolore reiciendis sunt alias nihil amet quibusdam nam. Eum ipsa quasi assumenda. Cupiditate eveniet ea atque, ratione voluptate repellendus nostrum aut optio eum, omnis quae unde iusto eaque tempora a debitis aliquam natus odio neque.</h4>
+ <a class="icons">
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+</a>
+
+<a class="icons">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+  <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+</svg>
+</a>
+<a class="icons">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+</svg>
+</a>
+<a class="icons">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+</a>
+        </center>
+</footer>
+</html>
+<!--.card img{
+    height: 250px;
+}
+.inner{
+    overflow: hidden;
+}
+.card img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}-->
+
+
+
